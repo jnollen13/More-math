@@ -2,7 +2,7 @@
  * adds usefull math things
  */
 //% weight=90 icon="\uf12c"
-namespace calculatorMath {
+namespace moreMath {
 
     /**
      * calculates the slope of a line off of 2 points in decimal form

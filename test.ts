@@ -1,4 +1,4 @@
-let _new = calculatorMath.scientificNotation(328458645499007027647357508373058365874687124457)
+let _new = moreMath.scientificNotation(328458645499007027647357508373058365874687124457)
 let mySprite = sprites.create(img`
     6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 
     6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 
