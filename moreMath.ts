@@ -1,0 +1,60 @@
+/**
+ * adds usefull math things
+ */
+//% weight=90 icon="\uf12c"
+namespace calculatorMath {
+
+    /**
+     * calculates the slope of a line off of 2 points in decimal form
+     */
+    //% block
+    export function slope(x1: number, y1: number, x2: number, y2: number): number {
+        let y = y2 - y1
+        let x = x2 - x1
+        let result = y / x
+        return result
+    }
+
+    /**
+     * does exponents
+     */
+    //% block
+    export function exponent(num:number,exponent:number): number{  
+        let multiplier = num
+        for (let i = 0; i < exponent-1; i++) {
+            multiplier*=num
+        }
+        if(exponent==0){
+            return 0
+        }else{
+        return multiplier;
+        }
+    }
+
+    /**
+     * converts a number to scientificNotation
+     * WARING: rounds a little bit
+     */
+    //% block
+    export function scientificNotation(num: number): string {
+        let workingNum = Math.trunc(num)
+        let multiplier = 0
+        while (workingNum>=10||workingNum<=-10) {
+            multiplier+=1
+            workingNum/=10
+        }
+        workingNum*=10000000
+        workingNum = Math.round(workingNum)
+        workingNum/=10000000
+        if(multiplier!=0){
+            if(multiplier==1||multiplier==-1){
+                    return workingNum+"*10"
+            }else{
+                return workingNum+"*10E"+multiplier;
+            }
+        }else{
+            return workingNum.toString();
+        }
+    }
+
+}

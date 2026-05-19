@@ -1,0 +1,18 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="PiLA(CMC9or;f+ELh8o:">_new</variable><variable id="-/M@lub4673_Vs:O(9ds">mySprite</variable><variable type="KIND_SpriteKind" id=":q{A53-68DJ)iz**`Q6{">Player</variable><variable type="KIND_SpriteKind" id="Rf)N6$;No3N]uR.uYyh.">Projectile</variable><variable type="KIND_SpriteKind" id="lQ;~JrCiO-#f(nXvwZHF">Food</variable><variable type="KIND_SpriteKind" id="puRF1!0gZ|[zs2h9QJw1">Enemy</variable></variables><block type="pxt-on-start" id="f~ql7`iRM!wZWF`4y4rT" x="0" y="0"><statement name="HANDLER"><block type="variables_set" id="F=kEt[@!4#xpb_CU(Z/-"><field name="VAR" id="PiLA(CMC9or;f+ELh8o:">_new</field><value name="VALUE"><shadow type="math_number" id="%S^+}%-bSeWIt1F]/Ke."><field name="NUM">0</field></shadow><block type="calculatorMath_exponent" id="8[N!!%zj?A}v]{#ZGlDs"><value name="num"><shadow type="math_number" id="*0^7Dflx$h}cS@+Q3XDv"><field name="NUM">6</field></shadow></value><value name="exponent"><shadow type="math_number" id="26WYv3l}?hSw:u*(**`e"><field name="NUM">1</field></shadow></value></block></value><next><block type="variables_set" id="[/HXnl]pjPX`B1CRmm0Q"><field name="VAR" id="-/M@lub4673_Vs:O(9ds">mySprite</field><value name="VALUE"><shadow type="math_number" id="C4lpht*6Gr]P-spD}NJa"><field name="NUM">0</field></shadow><block type="spritescreate" id="d-NlfVAy=FNARl,yW)Ms"><value name="img"><shadow type="screen_image_picker" id="23[$9R$l,TI^rCcGfX=7"><field name="img">img`
+6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 
+6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 
+6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 
+6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 
+6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 
+6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 
+6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 
+6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 
+6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 
+6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 
+6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 
+6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 
+6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 
+6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 
+6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 
+6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 
+`</field><data>{"commentRefs":[],"fieldData":{"img":null}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="I%zak;=soM,Bu@HHC]x+"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="spritesaytext" id="k,V;MLP,u-gE0zi-NIXs"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="true"></mutation><value name="this"><block type="variables_get" id="GgU^T[02mip!v~O$r(20"><field name="VAR" id="-/M@lub4673_Vs:O(9ds">mySprite</field></block></value><value name="text"><shadow type="text" id="BMMQD?P(}88uqh};oB06"><field name="TEXT"></field></shadow><block type="variables_get" id="9jY0n1Z/*FLx{o[UD__r"><field name="VAR" id="PiLA(CMC9or;f+ELh8o:">_new</field></block></value></block></next></block></next></block></statement></block></xml>
