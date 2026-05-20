@@ -58,11 +58,11 @@ namespace moreMath {
     }
 
     /**
-     * gets the lenth of a number
+     * gets the length of a number
      */
     //% block
     export function length(n:number): number {
-        let result = n.toString().length
+        let result = n.toString().replaceAll(".", "").replaceAll("-","").length
         return result;
     }
 }
