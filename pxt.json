@@ -1,7 +1,7 @@
 {
     "name": "moreMath",
     "version": "1.0.0",
-    "description": "adds a bunch of usefull math functions",
+    "description": "adds a bunch of useful math functions",
     "dependencies": {
         "device": "*"
     },
@@ -23,5 +23,6 @@
     "supportedTargets": [
         "arcade"
     ],
-    "preferredEditor": "tsprj"
+    "preferredEditor": "tsprj",
+    "disableTargetTemplateFiles": true
 }
