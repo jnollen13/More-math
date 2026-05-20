@@ -57,4 +57,12 @@ namespace moreMath {
         }
     }
 
+    /**
+     * gets the lenth of a number
+     */
+    //% block
+    export function length(n:number): number {
+        let result = n.toString().length
+        return result;
+    }
 }
