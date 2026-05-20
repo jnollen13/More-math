@@ -1,5 +1,5 @@
 /**
- * adds usefull math things
+ * adds useful math things
  */
 //% weight=90 icon="\uf12c"
 namespace moreMath {
@@ -63,6 +63,27 @@ namespace moreMath {
     //% block
     export function length(n:number): number {
         let result = n.toString().replaceAll(".", "").replaceAll("-","").length
+        return result;
+    }
+
+    /**
+     * get the value of y at x with formula y=mx+b
+     */
+    //% block
+    export function slopePointAtX(m:number,b:number, x:number): number {
+        let y = m*x+b;
+        let result=y
+        return result;
+    }
+
+    /**
+     * get the value of y at x with formula y=mx+b
+     */
+    //% block
+    export function slopetodecimal(rise:number,run:number): number {
+        rise=Math.trunc(rise)
+        run=Math.trunc(run)
+        let result = rise/run
         return result;
     }
 }
