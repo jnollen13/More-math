@@ -1,5 +1,6 @@
 {
     "name": "moreMath",
+    "version": "1.0.0",
     "description": "adds a bunch of usefull math functions",
     "dependencies": {
         "device": "*"
