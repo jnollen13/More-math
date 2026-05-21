@@ -1,5 +1,7 @@
 This extension makes it possible to: get the *slope* from two points,
-convert numbers to *scientific notation*, get the *length* of a number, and do *exponents*.
+convert numbers to *scientific notation*, get the *length* of a number,do *exponents*,
+multiply a number by a *fraction*, get the value of y at a specified x in a *linear equation*,
+and convert a *fraction to a decimal*.
 
 This repository can be added as an **extension** in MakeCode.
 
