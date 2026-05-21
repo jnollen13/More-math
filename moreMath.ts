@@ -18,6 +18,8 @@ namespace moreMath {
 
     /**
      * does exponents
+     * @param num the number the exponet gets aplied to
+     * @param exponent the exponent
      */
     //% blockId=exponent
     //% block="$num with exponent $exponent"
@@ -65,15 +67,16 @@ namespace moreMath {
      */
     //% block
     export function lengthOf(n:number): number {
-        let result = n.toString().replaceAll(".", "").replaceAll("-","").length
+        let result = n.toString().replaceAll(".", "").replaceAll("*", "")
+        .replaceAll("-","").replaceAll("+", "").replaceAll("=", "").length
         return result;
     }
 
     /**
      * get the value of y at x with formula y=mx+b
      */
-        //% blockId=slopePointAtX
-    //% block="=$m $x + $b"
+    //% blockId=slopePointAtX
+    //% block="y=$m $x + $b"
     export function slopePointAtX(m:number,b:number, x:number): number {
         let y = m*x+b;
         return y;
@@ -100,5 +103,22 @@ namespace moreMath {
         let root = toMultiply / denomenator;
         let result = root * nomenator
         return result;
+    }
+
+    /**
+     * does geometric sequences
+     */
+    //% blockId=geometricSequences
+    //% block="start at $startingNumber location: $n ratio: $r"
+    export function geometricSequences(startingNumber: number, n: number,r:number): number {
+        let multiplier = startingNumber
+        for (let i = 0; i < n; i++) {
+            multiplier *= r
+        }
+        if (n == 0) {
+            return startingNumber;
+        } else {
+            return multiplier;
+        }
     }
 }
