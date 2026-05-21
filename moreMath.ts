@@ -7,7 +7,8 @@ namespace moreMath {
     /**
      * calculates the slope of a line off of 2 points in decimal form
      */
-    //% block
+    //% blockId=slope
+    //% block="slope x1: $x1 y1: $y1 x2: $x2 y2: $y2"
     export function slope(x1: number, y1: number, x2: number, y2: number): number {
         let y = y2 - y1
         let x = x2 - x1
@@ -18,7 +19,8 @@ namespace moreMath {
     /**
      * does exponents
      */
-    //% block
+    //% blockId=exponent
+    //% block="$num with exponent $exponent"
     export function exponent(num:number,exponent:number): number{  
         let multiplier = num
         for (let i = 0; i < exponent-1; i++) {
@@ -30,12 +32,13 @@ namespace moreMath {
         return multiplier;
         }
     }
-
+    
     /**
      * converts a number to scientificNotation
      * WARING: rounds a little bit
      */
-    //% block
+    //% blockId=scientificNotation
+    //% block="scientific Notation of $num"
     export function scientificNotation(num: number): string {
         let workingNum = Math.trunc(num)
         let multiplier = 0
@@ -61,7 +64,7 @@ namespace moreMath {
      * gets the length of a number
      */
     //% block
-    export function length(n:number): number {
+    export function lengthOf(n:number): number {
         let result = n.toString().replaceAll(".", "").replaceAll("-","").length
         return result;
     }
@@ -69,21 +72,33 @@ namespace moreMath {
     /**
      * get the value of y at x with formula y=mx+b
      */
-    //% block
+        //% blockId=slopePointAtX
+    //% block="=$m $x + $b"
     export function slopePointAtX(m:number,b:number, x:number): number {
         let y = m*x+b;
-        let result=y
-        return result;
+        return y;
     }
 
     /**
      * get the value of y at x with formula y=mx+b
      */
-    //% block
+    //% blockId=slopeToDecimal
+    //% block="get decimal slope of $rise over $run"
     export function slopetodecimal(rise:number,run:number): number {
         rise=Math.trunc(rise)
         run=Math.trunc(run)
         let result = rise/run
+        return result;
+    }
+
+    /**
+     * multiplies a number by a fraction
+     */
+    //% blockId=multiplyByFraction
+    //% block="mutlipy by fraction $nomenator / $denomenator x $toMultiply"
+    export function multiplyByFraction(nomenator: number, denomenator: number, toMultiply: number): number {
+        let root = toMultiply / denomenator;
+        let result = root * nomenator
         return result;
     }
 }
